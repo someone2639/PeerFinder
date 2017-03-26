@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.squest {
+    /*border-radius: 16px;*/
+    height: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: grey;
+    opacity: 0.8;
+    color: white;
+    border-color: orange;
+    border-style: solid none;
+    font-size: 20px;
+    width: 99%;
+    left: 0%;
+}
+.subquest {
+    /*border-radius: 16px;*/
+    height: auto;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    background-color: grey;
+    opacity: 0.8;
+    color: white;
+    font-size: 20px;
+}
+#sDiv{
+    text-align: center;
+}
+body {
+    background-image: url(backtest.jpg);
+    background: linear-gradient(to left, #FFBBAA , #FFEEAA);
+    font-family: "Roboto";
+    padding-left: 0;
+    margin-left: 0;
+}
+h1{
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 50px;
+    padding: 0px;
+}
+button{
+    background: orange;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    border:none;
+    cursor: pointer;
+    animation-name: reverseshadow;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+button:hover{
+    animation-name: shadowbox;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes shadowbox {
+    0% {
+        background: orange;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    }
+    100% {
+    background: darkorange;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+@keyframes reverseshadow {
+    0% {
+        background: darkorange;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    100% {
+        background: orange;
+        padding: 10px 10px 10px 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+}

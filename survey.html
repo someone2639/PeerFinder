@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="surveystyle.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyAAjjptokmqiZofG_CjpufT_jJHE06UN5w",
+                authDomain: "hacker-cac58.firebaseapp.com",
+                databaseURL: "https://hacker-cac58.firebaseio.com",
+                storageBucket: "hacker-cac58.appspot.com",
+                messagingSenderId: "607087172381"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script type="text/javascript" src="survey.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAjjptokmqiZofG_CjpufT_jJHE06UN5w&callback=initMap">
+        </script>
+    </head>
+    <body>
+        <div class="squest">
+        <h1>Tutoring Subject Survey</h1>
+        </div>
+        <div class="squest">
+            <div class="subquest">Check here if you are willing to tutor others. If you would rather get tutored, keep the box blank<br/>
+                <input type="checkbox" name="q" id="qu1"/>I am willing to tutor others
+            </div>
+            <div class="subquest">Check here if you would like to get face-to-face help. If you would rather chat with a tutor online, keep this box blank
+                <br/><input type="checkbox" name="q2" id="qu3"/>I would like face-to-face help.
+            </div>
+            <div class="subquest">On a 0-5 scale, how productive do you consider yourself? Enter a number in the field below<br/>
+                <input type="number" id="zero"/>
+            </div>
+            <div class="subquest">Which subjects do you wish to be tutored on? (Separate subjects by commas)
+                <input type="text" id="subjtut"/>
+            </div>
+            <div class="subquest">Which subjects are you willing to tutor others on? (Separate subjects by commas)
+                <input type="text" id="subjtea"/>
+            </div>
+            <div id="sDiv">
+            <button onclick="submitForm()">Submit</button>
+            </div>
+        </div>
+    </body>
+</html>
+<!--Survey
+
+Are you looking to to tutor others or to be tutored yourself?
+
+I feel I waste a lot of time while working [0-5]
+
+I am an introvert [0-5]
+
+I would like to work with someone close to me [0-5, far to close]
+
+Would you like to work online or meet up in real life?
+1 Online
+2 IRL
+
+What subjects do you find yourself most troubled in?
+
+What subjects do you find yourself most proficient in?
+
+ ok can you try to code this so that the survey works? 
+-->

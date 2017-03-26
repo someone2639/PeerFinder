@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.cool {
+    background-color: grey;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    /*border-radius: 16px;*/
+    border-color: orange;
+    border-style: solid none;
+    text-overflow: ellipsis;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: "Roboto"; /*"Trebuchet MS", Helvetica, sans-serif;*/
+    font-size: 30px;
+    width:100%;
+    left:0%;
+    position: absolute;
+    animation-name: nice;
+    display: inline-block;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0.64;
+}
+
+@keyframes nice {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:0.8;
+    }
+}
+.niice * {
+    display: inline-block;
+    text-align: center;
+    width:150px;
+    border:none;
+    padding: 10px 10px 10px 10px;
+}
+.b{
+    background: orange;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    border:none;
+    cursor: pointer;
+    animation-name: reverseshadow;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+.b:hover{
+    animation-name: shadowbox;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    color: white;
+}
+body {
+    overflow: hidden;
+    background-image: url(backtest.jpg);
+    background: linear-gradient(to left, #FFBBAA , #FFEEAA);
+}
+@keyframes shadowbox {
+    0% {
+        background: orange;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    }
+    100% {
+    background: darkorange;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+@keyframes reverseshadow {
+    0% {
+        background: darkorange;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    100% {
+        background: orange;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    }
+}
+.tabin {
+    background-color: grey;
+    color: white;
+    border-color: orange;
+    border-style: solid none;
+    /*margin-left:10px;
+    margin-right:10px;*/
+    margin-bottom: 15px;
+    /*border-radius: 16px;*/
+    line-height: 120%;
+    padding: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    position:absolute;
+    left:0%;
+    font-family: "Roboto"; /*"Trebuchet MS", Helvetica, sans-serif;*/
+    font-size: 30px;
+    width:98.4%;
+    animation-name: come-in;
+    display: inline-block;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    z-index:9999;
+}
+.tabout {
+    background-color: grey;
+    color:white;
+    position:absolute;
+    /*margin-left:10px;
+    margin-right:10px;*/
+    margin-bottom: 15px;
+    /*border-radius: 16px;*/
+    border-color: orange;
+    border-style: solid none;
+    text-align: center;
+    left:0%;
+    padding: 10px;
+    padding-bottom: 15px;
+    font-family: "Roboto"; /*"Trebuchet MS", Helvetica, sans-serif;*/
+    font-size: 30px;
+    width:98.4%;
+    display:inline-block;
+    z-index:0;
+    opacity:0;
+    animation-name:come-out;
+    animation-duration:500ms;
+    animation-fill-mode:forwards;
+}
+@keyframes come-in {
+    0% {
+        opacity:0;
+        top:90%;
+    }
+    100% {
+        opacity:0.66;
+        top:30%;
+    }
+}
+@keyframes come-out {
+    0% {
+        opacity:0.66;
+        top:30%;
+    }
+    100% {
+        opacity:0;
+        top:90%;
+    }
+}
+h1{
+    /*color: #33CCFF;*/
+    border-color: darkorange;
+    color: white;
+    /*color: #FFBB33;*/
+    background: grey;
+    /*border-radius: 10px;
+    border-color: darkgrey;
+    border-style: solid;*/
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-family: "Roboto";
+    font-weight: lighter;
+    /*text-shadow: 1px 1px 1px black;*/
+    width: 98%;
+}
+input{
+    text-align: left;
+    /*margin-bottom: 10px;*/
+}
+#map {
+    width:1000px;
+    height:1000px;
+    opacity:0;
+    z-index: -9998;
+}
+.bload {
+    opacity: 0;
+}

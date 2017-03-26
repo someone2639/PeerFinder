@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="sty.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyAAjjptokmqiZofG_CjpufT_jJHE06UN5w",
+                authDomain: "hacker-cac58.firebaseapp.com",
+                databaseURL: "https://hacker-cac58.firebaseio.com",
+                storageBucket: "hacker-cac58.appspot.com",
+                messagingSenderId: "607087172381"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script type="text/javascript" src="funcs1.js"></script>
+    </head>
+    <body>
+        <div class="cool">
+            <h1 id="penguin"><img src="logo.png"  height=50></img> Peer Tutor Finder <img src="logo.png"  height=50></img></h1>
+            <div class="niice">
+                <button onclick="handleClick(event)" id="b0" class="b">Home</button>
+                <button onclick="handleClick(event)" id="b3" class="b">About Us</button>
+                <button onclick="handleClick(event)" id="b1" class="b">Find Peers</button>
+                <button onclick="handleClick(event)" id="b4" class="b">Create Account</button>
+                <button onclick="handleClick(event)" id="b5" class="b">Login</button>
+                <button onclick="handleClick(event)" id="b2" class="b">Contact Us</button>
+            </div>
+            </div>
+        <div id="content0" class="bload">
+            <h3>Home</h3>
+              <p>Peer tutoring is changing the world, one student at a time. 
+              At this site, we match you with others that are proficient in the same areas of study that you need help in and need help in areas that you are proficient in. 
+              Through an exchange of knowledge and learning, you will develop a connection with someone that will help you manage your time better and, or helping to keep you on task.
+              <br>Create an account and take our survey today to make lifelong friends while learning life long lessons!</br></p>
+        </div>
+        <div  id="content1" class="bload">
+            <h3>Find Peers</h3>
+              <p>Finding peers is as easy as logging in and taking a survey 
+              about what you are trying to learn and what type of person you are
+              in order to connect you with the best possible peers. Our intuitive
+              TutorScore will allow you to expand your knowledge further than you
+              would ever think possible.</p>
+              <a id="link" href="survey.html" target="_blank" class="b">Take Survey</a>
+        </div>
+        <div   id="content2" class="bload">
+            <h3>Contact Us</h3>
+              <p>If you want to contact us for further questions, email us at joe.slamommy@hotmail.com.</p>
+        </div>
+        <div  id="content3" class="bload">
+            <h3>About Us</h3>
+            <p>At Peer Tutor Finder, we do our best to match you up with other students who can not only tutor you to the best of their ability, but also become your lifelong friends and help you to manage your time and achieve your milestones more efficiently. Many students have trouble in school at some point or another; the solution is here.</p>
+        </div>
+        <div class="tabout" id="content4" class="bload"> 
+            <h3>Create Account</h3>
+            First Name:<br>
+            <input type="text" id="First"/></input><br>
+            Last Name:<br>
+            <input type="text" id="Last"/></input><br>
+            Username:<br>
+            <input type="text" id="Username"/></input><br>
+            Password:<br>
+            <input type="password" id="Password"/></input><br>
+            <p></p>
+            <div style="display:inline-block;">
+                <button id="creator" onclick="createUser()" class="b">Create Account</button>
+                <button id="google" onclick="createUserwGoogle()" class='b'>Sign in with Google</button>
+            </div>
+            <div id="successBool"></div>
+        </div>
+        <div class="tabout" id="content5" class="bload">
+            <h3>Log In</h3>
+            Username<br>
+            <input type="text" id="Username2"/></input><br>
+            Password<br>
+            <input type="password" id="Password2"/></input><br>
+            <p></p>
+            <div style="display:inline-block;">
+                <button onclick="signIn()" class="b">Sign In</button>
+                <button onclick="createUserwGoogle()" class="b">Sign in With Google</button>
+            </div>
+        </div>
+    </body>
+</html>
